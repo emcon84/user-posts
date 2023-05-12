@@ -56,7 +56,7 @@ export const UserById: React.FC<Props> = ({ id }) => {
                 />
 
             </div>
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2does not match the required types of a Next.js Route.">
                 {photo.map((photo) => (
                     <div key={photo.id}>
                         <Image
