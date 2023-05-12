@@ -1,30 +1,41 @@
-import { css, SerializedStyles } from "@emotion/react";
-import { BounceLoader } from "react-spinners";
+import styled, { keyframes } from "styled-components";
+import { DotLoader } from "react-spinners";
 
-interface LoaderSizeProps {
-    size?: number | string;
-    sizeUnit?: "px" | "%" | "em" | "rem";
+interface SpinnerProps {
+    size?: number;
+    color?: string;
 }
 
-interface BounceLoaderProps extends LoaderSizeProps {
-    css?: SerializedStyles;
-}
-
-const override = css`
-  display: block;
-  margin: 0 auto;
-  border-color: red;
+const rotate = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 `;
 
-interface Props {
-    loading: boolean;
-}
+const SpinnerWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
-const Spinner: React.FC<Props> = ({ loading }) => {
+  .spinner {
+    animation: ${rotate} 1s linear infinite;
+  }
+`;
+
+const SpinnerText = styled.p`
+  margin-left: 10px;
+`;
+
+const Spinner: React.FC<SpinnerProps> = ({ size = 60, color = "#123abc" }) => {
     return (
-        <div className="sweet-loading">
-            <BounceLoader css={override} size={60} color={"#123abc"} loading={loading} />
-        </div>
+        <SpinnerWrapper>
+            <DotLoader color={color} size={size} className="spinner" />
+            <SpinnerText>Loading...</SpinnerText>
+        </SpinnerWrapper>
     );
 };
 

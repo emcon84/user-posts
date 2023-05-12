@@ -26,7 +26,7 @@ export default function UsersPage() {
   }, []);
 
   if (!data) {
-    return <div className="flex justify-center items-center h-screen"><Spinner loading={!data} /></div>;
+    return <div className="flex justify-center items-center h-screen"><Spinner /></div>;
   }
 
   return (
