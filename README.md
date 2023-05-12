@@ -1,38 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proyecto Next.js con Redux Toolkit, Styled Components, Tailwind CSS y Conexión a APIs
 
-## Getting Started
+Este es un proyecto desarrollado con [Next.js](https://nextjs.org/), [Redux Toolkit](https://redux-toolkit.js.org/), [Styled Components](https://styled-components.com/) y [Tailwind CSS](https://tailwindcss.com/), que se conecta a las APIs [JSONPlaceholder](https://jsonplaceholder.typicode.com/) y [Reqres.in](https://reqres.in/) para mostrar y manipular datos.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Este proyecto cuenta con las siguientes funcionalidades:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Muestra una lista de usuarios obtenidos de la API JSONPlaceholder.
+- Permite visualizar la información detallada de cada usuario.
+- Permite crear, actualizar y eliminar usuarios mediante la API Reqres.in.
+- Utiliza Redux Toolkit para manejar el estado de la aplicación de forma eficiente.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Instalación
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Para instalar y utilizar este proyecto, sigue los siguientes pasos:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Clona este repositorio en tu equipo con el siguiente comando:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```
+   git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+   ```
 
-## Learn More
+2. Accede al directorio del proyecto:
 
-To learn more about Next.js, take a look at the following resources:
+   ```
+   cd nombre-del-repositorio
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Instala las dependencias del proyecto:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```
+   npm install
+   ```
 
-## Deploy on Vercel
+4. Crea un archivo `.env.local` en el directorio raíz del proyecto y define las siguientes variables de entorno con tus propias credenciales:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```
+   NEXT_PUBLIC_JSONPLACEHOLDER_API_URL=https://jsonplaceholder.typicode.com
+   NEXT_PUBLIC_REQRES_API_URL=https://reqres.in/api
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. Inicia el servidor de desarrollo:
+
+   ```
+   npm run dev
+   ```
+
+6. Abre tu navegador y accede a la dirección [http://localhost:3000](http://localhost:3000) para visualizar la aplicación.
+
+## Tecnologías utilizadas
+
+Este proyecto utiliza las siguientes tecnologías:
+
+- [Next.js](https://nextjs.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [Styled Components](https://styled-components.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [JSONPlaceholder API](https://jsonplaceholder.typicode.com/)
+- [Reqres.in API](https://reqres.in/)
+
+## Autor
+
+Este proyecto fue creado por [Tu nombre](https://github.com/tu-usuario).# user-posts
