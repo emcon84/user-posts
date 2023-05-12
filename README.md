@@ -18,32 +18,25 @@ Para instalar y utilizar este proyecto, sigue los siguientes pasos:
 1. Clona este repositorio en tu equipo con el siguiente comando:
 
    ```
-   git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+   git clone https://github.com/emcon84/user-posts.git
    ```
 
 2. Accede al directorio del proyecto:
 
    ```
-   cd nombre-del-repositorio
+   cd user-posts
    ```
 
 3. Instala las dependencias del proyecto:
 
    ```
-   npm install
+   yarn install
    ```
 
-4. Crea un archivo `.env.local` en el directorio raíz del proyecto y define las siguientes variables de entorno con tus propias credenciales:
+4. Inicia el servidor de desarrollo:
 
    ```
-   NEXT_PUBLIC_JSONPLACEHOLDER_API_URL=https://jsonplaceholder.typicode.com
-   NEXT_PUBLIC_REQRES_API_URL=https://reqres.in/api
-   ```
-
-5. Inicia el servidor de desarrollo:
-
-   ```
-   npm run dev
+   yarn dev
    ```
 
 6. Abre tu navegador y accede a la dirección [http://localhost:3000](http://localhost:3000) para visualizar la aplicación.
@@ -61,4 +54,4 @@ Este proyecto utiliza las siguientes tecnologías:
 
 ## Autor
 
-Este proyecto fue creado por [Tu nombre](https://github.com/tu-usuario).# user-posts
+Este proyecto fue creado por [Emiliano Conti](https://github.com/emcon84).# user-posts
